@@ -75,12 +75,12 @@ const TicTacToe = (e,num) => {
     const reset = () => {
         setlock(false);
         data = ["", "", "", "", "", "", "", "", ""];
-        titleRef.current.innerHTML = `tic tac toe <span>react<span>`;
+        titleRef.current.innerHTML = `Tic Tac Toe <span>React<span>`;
          box_array.map((e) => { e.current.innerHTML = ""; })
     }
   return (
     <div className='container'>
-      <h1 className='title' ref={titleRef}>tic tac toe  <span >react</span></h1>
+      <h1 className='title' ref={titleRef}>Tic Tac Toe  <span >React</span></h1>
           <div className="board">
           <div className="row1">
               <div className="box"ref={box1}onClick={(e)=>{toggle(e,0)}}></div>
@@ -98,7 +98,7 @@ const TicTacToe = (e,num) => {
               <div className="box"ref={box9}onClick={(e)=>{toggle(e,8)}}></div>
           </div>
           </div>
-      <button className="reset" onClick={(e)=>{reset()}}>reset</button>
+      <button className="reset" onClick={(e)=>{reset()}}>Restart</button>
     </div>
   )
 }
